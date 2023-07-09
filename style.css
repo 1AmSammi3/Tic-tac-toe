@@ -3,7 +3,6 @@ html{
 }
 body{
    display: flex;
-   text-shadow: 0 0 15px #ff0073;
    font-family: "Arial Rounded MT", "Helvetica Rounded", Arial, sans-serif;
    flex-direction: column;
    height: 80vh;
