@@ -256,10 +256,10 @@ p.clicky{
    transform: translate(200px, -150px);
 }
 .left.mov{
-   animation: move1 2s 1 ease;
+   animation: move1 1s 1 ease;
 }
 .right.mov{
-   animation: move2 2s 1 ease;
+   animation: move2 1s 1 ease;
 }
 @keyframes move1{
    from{
