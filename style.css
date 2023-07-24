@@ -279,3 +279,55 @@ p.clicky{
       filter: opacity(100%);
    }
 }
+.popup{
+    position: fixed;
+    z-index: 1;
+    max-width: 120vw;
+    font-size: 50px;
+    padding: 30px;
+    margin: 20px;
+    background: linear-gradient( 80deg, #0b0031, #0b0031, #0b0031, #0b0031, #2c0031);
+    border: solid 8px #fff;
+    box-shadow: inset 0 0 40px #840094;
+    border-radius: 11px;
+    text-align: center;
+    transform: translate(-0%, -0%) scale(0);
+    transition: .2s ease-in-out;
+}
+.popup.active{
+   transform: translate(-0%, -0%) scale(1);
+}
+.alert{
+    margin: 20px 500px 80px 50px;
+    transform: translateX(200px);
+}
+.retry{
+    padding: 20px 40px 20px 40px;
+    display: inline-block;
+    border-radius: 11px;
+    border: 5px solid white;
+    top: 4px;
+    color: white;
+    transitions: all .10s;
+    background-color: transparent;
+    font-size: 35px;
+    margin: 20px;
+    box-shadow: 0 0 20px #840094;
+}
+.overlay{
+  /* Set the overlay styles */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  background-color: #0a001aa7; /* Semi-transparent black overlay */
+  backdrop-filter: blur(10px); /* Adjust the value (10px) to control the intensity of the blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay.active{
+   z-index: 1;
+   }
